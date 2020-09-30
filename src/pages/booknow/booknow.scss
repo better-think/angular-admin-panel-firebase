@@ -1,0 +1,132 @@
+page-booknow {
+    .list {
+        margin-bottom: 0;
+        &.profile {
+            .item {
+                padding-top: 4px;
+                padding-bottom: 4px;
+                margin-bottom: 0px;
+                box-shadow: 0 1px 5px rgba(0, 0, 0, 0.10);
+                ion-avatar {
+                    width: 70px;
+                    height: 70px;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    img {
+                        position: absolute;
+                        top: 0 !important;
+                        left: 0 !important;
+                        right: 0 !important;
+                        bottom: 0 !important;
+                        margin: auto !important;
+                        width: 75px;
+                        height: 75px;
+                        max-width: unset !important;
+                    }
+                }
+                h2 {
+                    font-size: 1.69rem;
+                    font-weight: 400;
+                    span {
+                        opacity: .8;
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                    }
+                }
+                p {
+                    font-size: 1.11rem;
+                    font-weight: 300;
+                    padding-bottom: 3px;
+                }
+            }
+        }
+    }
+    ion-scroll {
+        .select-date {
+            display: inline-block;
+            margin: 0 9px;
+            margin-top: 30px;
+            p {
+                color: white;
+                margin: 0;
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+            h2 {
+                color: white;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-weight: 400;
+                border-radius: 5px;
+                margin-top: 13px;
+                font-size: 2.5rem;
+            }
+            &.active {
+                h2 {
+                    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.3);
+                    color: black;
+                    background: white;
+                }
+            }
+            &:first-child {
+                margin-left: 26px;
+            }
+        }
+    }
+    .form {
+        max-width: 85%;
+        .list {
+            .item {
+                padding-bottom: 12px;
+                &.item-select {
+                    display: block;
+                    margin-top: 24px;
+                    .input-wrapper {
+                        display: block;
+                        .label {
+                            font-weight: 400!important;
+                            font-size: 1.3rem !important;
+                        }
+                        .select {
+                            max-width: 100%;
+                            width: 100%;
+                            padding: 0;
+                            .select-text {
+                                font-size: 1.5rem;
+                                font-weight: 400;
+                                padding-top: 7px;
+                            }
+                            .select-icon {
+                                width: 16px;
+                                height: 19px;
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+                &.item-input {
+                    margin-top: 5px;
+                    &.item-label-floating {
+                        .text-input {
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                            font-size: 1.5rem;
+                            letter-spacing: .5px;
+                        }
+                    }
+                    .label {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .input-has-value .label-md[floating] {
+                transform: translate3d(0, 0, 0) scale(0.88);
+            }
+            .row {
+                margin: 0 -5px;
+            }
+        }
+    }
+}

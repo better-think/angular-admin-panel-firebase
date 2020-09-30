@@ -1,0 +1,90 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Book now <span> <ion-icon name="md-checkmark"></ion-icon></span></ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list class="profile bg-thime">
+        <ion-item class=" bg-thime">
+            <ion-avatar item-start>
+                <img src="assets/imgs/profile2.png">
+            </ion-avatar>
+            <h2 class="text-white">Alex John <span> | Plumber</span></h2>
+            <p class="text-white">Tab. Wash Basin and sink Problem</p>
+        </ion-item>
+    </ion-list>
+    <ion-scroll scrollX="true" style="height: 120px;; white-space: nowrap;" class=" bg-thime">
+        <div class="select-date active">
+            <p text-center>Mon</p>
+            <h2 text-center>23</h2>
+        </div>
+        <div class="select-date">
+            <p text-center>The</p>
+            <h2 text-center>24</h2>
+        </div>
+        <div class="select-date">
+            <p text-center>Web</p>
+            <h2 text-center>25</h2>
+        </div>
+        <div class="select-date">
+            <p text-center>Thu</p>
+            <h2 text-center>26</h2>
+        </div>
+        <div class="select-date">
+            <p text-center>Frt</p>
+            <h2 text-center>27</h2>
+        </div>
+        <div class="select-date">
+            <p text-center>Sat</p>
+            <h2 text-center>28</h2>
+        </div>
+        <div class="select-date">
+            <p text-center>Sun</p>
+            <h2 text-center>29</h2>
+        </div>
+    </ion-scroll>
+
+    <div class="form">
+        <ion-list no-lines>
+            <ion-item class="select-box">
+                <ion-label class="text-thime">When?</ion-label>
+                <ion-select [(ngModel)]="gaming">
+                    <ion-option value="nes">09:00am - 11:00 am</ion-option>
+                    <ion-option value="n64">11:00 am - 09:00am</ion-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item class="select-box">
+                <ion-label class="text-thime">Where?</ion-label>
+                <ion-select [(ngModel)]="where">
+                    <ion-option value="nes">Aadarsh Society</ion-option>
+                    <ion-option value="n64">Nintendo64</ion-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-row>
+                <ion-col col-4 padding-right>
+                    <ion-item>
+                        <ion-label class="text-grey" floating>House num</ion-label>
+                        <ion-input type="text" value="104"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-8 padding-left>
+                    <ion-item>
+                        <ion-label class="text-grey" floating>Society / Building</ion-label>
+                        <ion-input type="text" value="Shraddha residency"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-item>
+                <ion-label class="text-grey" floating>Full Address</ion-label>
+                <ion-input type="text" value="Behind Golden plaza, Delhi."></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label class="text-grey" floating>Landmark</ion-label>
+                <ion-input type="text" value="Mg Statue"></ion-input>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

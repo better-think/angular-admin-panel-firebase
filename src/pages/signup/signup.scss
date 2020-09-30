@@ -1,0 +1,81 @@
+page-signup {
+    .header {
+        .toolbar {
+            .toolbar-content {
+                .toolbar-title {
+                    color: black !important;
+                }
+            }
+            .bar-button,
+            .back-button {
+                color: black !important;
+            }
+        }
+    }
+    .form {
+        .list {
+            margin-bottom: 0px;
+            .item {
+                margin-top: 28px;
+                &.otp {
+                    display: block;
+                    border-bottom: none !important;
+                    .item-inner {
+                        padding: 0;
+                    }
+                    .input-wrapper {
+                        display: block;
+                        ion-label {
+                            max-width: 100% !important;
+                            font-size: 1.3rem;
+                            margin-bottom: 0;
+                        }
+                        .text-input {
+                            text-align: left;
+                            font-size: 3rem;
+                            border: 1px solid #afafaf;
+                            margin: 0;
+                            margin-top: 5px;
+                            color: #7d7d7d;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            &.resend {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                margin-bottom: 30px;
+                font-size: 1.3rem;
+                font-weight: 300;
+                span {
+                    margin-left: auto;
+                    font-weight: 500;
+                    font-size: 1.33rem;
+                }
+            }
+        }
+    }
+    .fixed-bottom {
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            small {
+                font-size: 1.1rem;
+                font-weight: 400;
+            }
+        }
+    }
+    @media (max-width: 320px) {
+        .fixed-bottom {
+            p {
+                small {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,251 @@
+page-plumberprofile {
+    .profile-box {
+        position: fixed;
+        overflow: hidden;
+        padding-top: 43px;
+        width: 100%;
+        padding-top: 43px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 114px;
+            display: block;
+            background: black;
+        }
+        .profile {
+            position: relative;
+            width: 85%;
+            margin: 0 auto;
+            background: white;
+            .profile-img {
+                position: absolute;
+                top: -55px;
+                left: 0;
+                right: 0;
+                width: 110px;
+                height: 110px;
+                margin: auto;
+                overflow: hidden;
+                border-radius: 50%;
+                img {
+                    position: absolute;
+                    width: 120px;
+                    max-width: unset;
+                    height: 120px;
+                    top: -2px;
+                    right: 0;
+                    left: 0;
+                    bottom: 0px;
+                }
+            }
+            p {
+                &.retaing {
+                    padding-right: 20px;
+                    font-size: 1.25rem;
+                    padding-top: 12px;
+                    span {
+                        font-size: 1.1rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+            h2 {
+                margin: auto;
+                margin-top: 39px;
+                font-size: 1.59rem;
+                span {
+                    &.type {
+                        font-size: 1.3rem;
+                        font-weight: 300;
+                        color: #c2c2c2;
+                        letter-spacing: .5px;
+                    }
+                }
+            }
+            .row {
+                margin-top: 5px;
+                padding-bottom: 5px;
+                .col {
+                    h3 {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        margin-top: 13px;
+                        margin-bottom: 0;
+                        color: #6c6c6c;
+                        img {
+                            position: relative;
+                            width: 10px;
+                            margin-right: 6px;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 1.1rem;
+                        color: #b1b1b1;
+                        font-weight: 300;
+                    }
+                }
+                &.btn-box {
+                    padding-bottom: 0;
+                    .col {
+                        padding: 0;
+                        .button {
+                            font-size: 1.4rem;
+                            &.btn {
+                                height: 4.5rem;
+                                ion-icon {
+                                    font-size: 1.7rem;
+                                    margin-right: 10px;
+                                }
+                                &.message-btn {
+                                    font-weight: 400;
+                                    background: white !important;
+                                    &:hover,
+                                    &:focus,
+                                    &:active {
+                                        background: white !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .segment {
+            position: relative;
+            margin-top: 5px;
+            background: white;
+            .segment-button {
+                border: none !important;
+                position: relative;
+                font-size: 1.6rem;
+                color: #9a9a9a;
+                text-transform: none;
+                font-weight: 400;
+                opacity: unset;
+                letter-spacing: .5px;
+                background: none !important;
+                border: none !important;
+                height: 4.7rem;
+                width: 100%;
+                font-weight: 400;
+                &.segment-activated {
+                    font-weight: 400;
+                    color: black;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                        right: 0;
+                        width: 100px;
+                        height: 3px;
+                        margin: auto;
+                        background: black;
+                        z-index: 1;
+                    }
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 1px;
+                margin: auto;
+                background: #ccc;
+            }
+        }
+    }
+    .tab {
+        position: fixed;
+        bottom: 0;
+        height: calc(100vh - 379px);
+        overflow: scroll;
+        background: white;
+        .tab-container {
+            padding: 30px 30px;
+            padding-bottom: 0;
+            .list {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+                font-size: 1.4rem;
+                padding-bottom: 23px;
+                color: #555555;
+            }
+            .services {
+                h6 {
+                    padding-bottom: 13px;
+                    margin: 0;
+                }
+                p {
+                    padding-bottom: 0;
+                }
+            }
+            .reviews {
+                .item {
+                    padding: 0;
+                    padding-bottom: 20px;
+                    .label {
+                        margin: 0;
+                        white-space: normal;
+                        .reviews-details {
+                            margin-bottom: 12px;
+                            display: flex;
+                            align-items: center;
+                            h2 {
+                                padding-top: 0px;
+                                margin: 0;
+                                font-size: 1.6rem;
+                                font-weight: 500;
+                                small {
+                                    display: block;
+                                    font-size: 1.2rem;
+                                    font-weight: 400;
+                                    margin-top: 2px;
+                                }
+                            }
+                            .review-img {
+                                min-width: 50px;
+                                max-width: 50px;
+                                height: 50px;
+                                position: relative;
+                                overflow: hidden;
+                                border-radius: 50%;
+                                margin-right: 20px;
+                                img {
+                                    width: 55px;
+                                    position: absolute;
+                                }
+                            }
+                            p {
+                                margin-left: auto;
+                                padding: 0;
+                                margin-bottom: 17px;
+                                font-size: 1.13rem;
+                                min-width: 89px;
+                                text-align: right;
+                                font-weight: 300;
+                                color: #a1a1a1;
+                            }
+                        }
+                        p {
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            line-height: 20px;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

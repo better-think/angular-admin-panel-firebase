@@ -1,0 +1,163 @@
+page-home {
+    .header {
+        .toolbar {
+            position: absolute;
+            .bar-button {
+                color: #fff !important;
+            }
+            .toolbar-content {
+                .toolbar-title {
+                    align-items: flex-end;
+                    padding-left: 20px !important;
+                    .pin-icon {
+                        font-size: 1.5rem;
+                        margin-right: 10px;
+                        margin-bottom: 4px;
+                    }
+                    .city {
+                        padding-right: 25px;
+                        position: relative;
+                        ion-icon {
+                            position: absolute;
+                            font-size: 2rem;
+                            bottom: 0;
+                            right: 0;
+                        }
+                        ion-select {
+                            padding: 0 !important;
+                            max-width: unset;
+                            font-size: 1.8rem;
+                            min-height: unset;
+                            .select-icon {
+                                width: 17px;
+                                height: 19px;
+                                top: 5px;
+                                display: none;
+                                .select-icon-inner {
+                                    color: #fff !important;
+                                }
+                            }
+                        }
+                        ion-label {
+                            margin: 0;
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .scroll-content {
+        margin-top: 0 !important;
+        .banner {
+            width: 100%;
+            height: 210px;
+            overflow: hidden;
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                max-width: unset;
+            }
+            h1 {
+                position: relative;
+                z-index: 1;
+                left: 19px;
+                bottom: -80px;
+                width: 197px;
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(98, 31, 208, 0.9);
+                display: block;
+            }
+        }
+        .searchbar {
+            position: absolute;
+            z-index: 1;
+            padding: 8px 17px;
+            padding-top: 0;
+            top: 180px;
+            background: none;
+            .searchbar-input {
+                padding: 10px 55px;
+                border-radius: 4px;
+                font-size: 1.4rem;
+                letter-spacing: .5px;
+                box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.0), 0 1px 4px 0 rgba(0, 0, 0, 0.100);
+                &::-moz-placeholder {
+                    color: #e4e4e4;
+                    font-weight: 300;
+                }
+                &:-ms-input-placeholder {
+                    color: #e4e4e4;
+                    font-weight: 300;
+                }
+                &::-webkit-input-placeholder {
+                    text-indent: 0;
+                    color: #e4e4e4;
+                    font-weight: 300;
+                }
+            }
+            .searchbar-search-icon {
+                background-image: url(../assets/imgs/search-icon.png) !important;
+                left: 17px;
+                top: 14px;
+            }
+            &.searchbar-ios {
+                border-bottom: none;
+                .searchbar-input {
+                    padding: 25px 55px;
+                }
+                .searchbar-search-icon {
+                    background-size: 22px;
+                    width: 27px;
+                    height: 24px;
+                }
+            }
+        }
+        .home-menu {
+            margin-top: 31px;
+            .row {
+                padding-left: 17px;
+                padding-right: 17px;
+                .col {
+                    padding: 0;
+                    padding: 0;
+                    padding-right: 2px;
+                    padding-bottom: 2px;
+                    .menu-item {
+                        padding: 13px 5px;
+                        text-align: center;
+                        background: white;
+                        box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.09);
+                        border-radius: 5px;
+                        img {
+                            width: 23px;
+                            max-width: 23px;
+                        }
+                        p {
+                            margin: 0;
+                            padding-bottom: 4px;
+                            padding-top: 8px;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

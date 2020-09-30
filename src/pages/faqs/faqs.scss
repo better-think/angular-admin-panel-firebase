@@ -1,0 +1,46 @@
+page-faqs {
+    .list {
+        margin-top: 7px;
+        .item {
+            padding: 9px 6px 12px 32px;
+            margin-bottom: 4px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+            .label {
+                white-space: normal;
+                text-overflow: unset;
+                h2 {
+                    font-size: 1.7rem;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0px;
+                    color: #252525;
+                    ion-icon {
+                        margin-left: auto;
+                        color: #797979;
+                        font-size: 2.2rem;
+                        min-width: 20px;
+                        text-align: right;
+                    }
+                }
+                p {
+                    height: 0px;
+                    font-size: 1.5rem;
+                    width: 100%;
+                    max-width: 91%;
+                    margin: 0 auto;
+                    text-align: justify;
+                }
+            }
+            &.active {
+                ion-icon {
+                    transform: rotate(180deg);
+                }
+                p {
+                    height: auto;
+                    padding-top: 18px;
+                }
+            }
+        }
+    }
+}

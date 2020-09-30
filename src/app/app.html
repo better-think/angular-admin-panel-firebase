@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+       <ion-buttons start>
+          <button ion-button>
+             <ion-icon name="contact"></ion-icon>
+          </button>
+       </ion-buttons>
+       <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+       </button>
+       <ion-title>
+          Title
+       </ion-title>
+       <ion-buttons end>
+          <button ion-button (click)="doClick()">
+             <ion-icon name="more"></ion-icon>
+          </button>
+       </ion-buttons>
+    </ion-navbar>
+ </ion-header>
+ <ion-menu [content]="mycontent" side="left" >
+    <ion-content>
+        <ion-list>
+            <ion-item menuClose> 
+                <button ion-button menuClose="left">Close Left Menu</button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+ </ion-menu>
+ <ion-nav #mycontent [root]="rootPage">
+ </ion-nav>

@@ -1,0 +1,44 @@
+<ion-header class="bg-transparent">
+    <ion-navbar>
+        <ion-title>Sign Up</ion-title>
+    </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+    <div class="form">
+        <ion-list no-lines>
+            <ion-item>
+                <ion-avatar item-start>
+                    <ion-icon name="md-person" class="text-thime"></ion-icon>
+                </ion-avatar>
+                <ion-label class="text-grey" floating>Enter Full Name</ion-label>
+                <ion-input [(ngModel)]="name" name="name" type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-avatar item-start>
+                    <ion-icon name="md-mail" class="text-thime"></ion-icon>
+                </ion-avatar>
+                <ion-label class="text-grey" floating>Enter Email Id</ion-label>
+                <ion-input [(ngModel)]="email" id="email" name="email" type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-avatar item-start style="margin-bottom: 3px; margin-right: 28px;">
+                    <ion-icon name="md-phone-portrait" class="text-thime"></ion-icon>
+                </ion-avatar>
+                <ion-label class="text-grey" floating>Mobile Number</ion-label>
+                <ion-input [(ngModel)]="phone" name="phone" type="text" value="+91 903 335 7608"></ion-input>
+            </ion-item>
+
+            <ion-item class="otp">
+                <ion-label class="text-grey">Enter OTP Sent to adove given number</ion-label>
+                <ion-input [(ngModel)]="password" id="password" name="password" type="password" value="1232"></ion-input>
+            </ion-item>
+        </ion-list>
+        <p class="text-grey resend">00:23 <span class="text-thime">Resend OTP</span></p>
+        <button class="btn" ion-button round full margin-top margin-bottom (click)="requestSignup()">Sign up now</button>
+        <p class="text-thime" text-center (click)="forgotpassword()">Forgot Password</p>
+        <div class="fixed-bottom">
+            <p class="text-grey" text-center><small>By signing up, you are agree to our <ins>terms & condition</ins></small></p>
+        </div>
+    </div>
+</ion-content>

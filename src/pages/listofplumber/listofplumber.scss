@@ -1,0 +1,107 @@
+page-listofplumber {
+    .header {
+        .list {
+            margin-bottom: 0;
+            padding-bottom: 15px;
+            .item {
+                padding-top: 0;
+                padding-bottom: 0;
+                background: none;
+                box-shadow: none;
+                min-height: unset !important;
+                .select {
+                    max-width: 100%;
+                    width: 100%;
+                    padding: 0 12px 0 5px;
+                    color: white !important;
+                    .select-text {
+                        font-size: 1.8rem;
+                    }
+                    .select-icon {
+                        width: 12px;
+                        height: 19px;
+                        top: 5px;
+                        .select-icon-inner {
+                            color: white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .list {
+        margin-top: 7px;
+        margin-bottom: 0px;
+        .item {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin-bottom: 2px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.10);
+            ion-avatar {
+                width: 70px;
+                height: 70px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 50%;
+                img {
+                    position: absolute;
+                    top: 0 !important;
+                    left: 0 !important;
+                    right: 0 !important;
+                    bottom: 0 !important;
+                    margin: auto !important;
+                    width: 75px;
+                    height: 75px;
+                    max-width: unset !important;
+                }
+            }
+            h2 {
+                font-size: 1.65rem;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                span {
+                    &.small {
+                        font-size: 1.3rem;
+                        font-weight: 300;
+                    }
+                    &.ml-auto {
+                        margin-left: auto;
+                        min-width: 80px;
+                        text-align: right;
+                        small {
+                            color: #c6c6c6 !important;
+                        }
+                        ion-icon {
+                            font-size: 1.16rem;
+                            margin-right: 2px;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 1.1rem;
+                font-weight: 400;
+                color: #6c6c6c !important;
+                display: flex;
+                align-items: center;
+                span {
+                    img {
+                        position: relative;
+                        width: 7px;
+                        top: 1px;
+                    }
+                    &.ml-auto {
+                        margin-left: auto;
+                        font-weight: 300;
+                        font-size: 1.22rem;
+                        min-width: 80px;
+                        max-width: 130px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

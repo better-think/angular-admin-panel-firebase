@@ -1,0 +1,67 @@
+<ion-header class="bg-thime">
+    <ion-navbar>
+        <ion-title>Requests <span><ion-icon name="md-search"></ion-icon></span></ion-title>
+    </ion-navbar>
+
+    <ion-segment [(ngModel)]="requests">
+        <ion-segment-button value="pending">
+            Pending
+        </ion-segment-button>
+        <ion-segment-button value="completed">
+            Completed
+        </ion-segment-button>
+    </ion-segment>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div [ngSwitch]="requests">
+        <ion-list *ngSwitchCase="'pending'" no-lines>
+            <ion-item class="" (click)="booking()">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/profile2.png">
+                </ion-avatar>
+                <h2><span class="text-ellipsis">Alizam Smith </span><span class="text-light-grey small">&nbsp; | Plumber</span> <span class="ml-auto small">Pending</span></h2>
+                <p class="text-grey"><span class="text-ellipsis"><img src="assets/imgs/ruppes-icon.png"> 200 / per hover</span> <span class="ml-auto text-ellipsis">21<sup>st</sup> jan, 09:00 - 11:00</span></p>
+            </ion-item>
+            <ion-item class="approved" (click)="booking()">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/profile1.png">
+                </ion-avatar>
+                <h2><span class="text-ellipsis">Alex John</span><span class="text-light-grey small">&nbsp; | Plumber</span> <span class="ml-auto small">Approved</span></h2>
+                <p class="text-grey"><span class="text-ellipsis"><img src="assets/imgs/ruppes-icon.png"> 250 / per hover</span> <span class="ml-auto text-ellipsis">21<sup>st</sup> jan, 09:00 - 11:00</span></p>
+            </ion-item>
+            <ion-item class="rejected" (click)="booking()">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/profile3.png">
+                </ion-avatar>
+                <h2><span class="text-ellipsis">Poul Wiliams</span><span class="text-light-grey small">&nbsp; | Plumber</span> <span class="ml-auto small">Rejected</span></h2>
+                <p class="text-grey"><span class="text-ellipsis"><img src="assets/imgs/ruppes-icon.png"> 200 / per hover</span> <span class="ml-auto text-ellipsis">21<sup>st</sup> jan, 09:00 - 11:00</span></p>
+            </ion-item>
+            <ion-item class="in-process" (click)="booking()">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/profile4.png">
+                </ion-avatar>
+                <h2><span class="text-ellipsis">Beena Smith</span><span class="text-light-grey small">&nbsp; | Plumber</span> <span class="ml-auto small">In process</span></h2>
+                <p class="text-grey"><span class="text-ellipsis"><img src="assets/imgs/ruppes-icon.png"> 200 / per hover</span> <span class="ml-auto text-ellipsis">21<sup>st</sup> jan, 09:00 - 11:00</span></p>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'completed'" no-lines>
+            <ion-item class="approved" (click)="booking()">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/profile1.png">
+                </ion-avatar>
+                <h2><span class="text-ellipsis">Alex John</span><span class="text-light-grey small">&nbsp; | Plumber</span> <span class="ml-auto small">Approved</span></h2>
+                <p class="text-grey"><span class="text-ellipsis"><img src="assets/imgs/ruppes-icon.png"> 250 / per hover</span> <span class="ml-auto text-ellipsis">21<sup>st</sup> jan, 09:00 - 11:00</span></p>
+            </ion-item>
+            <ion-item class="in-process" (click)="booking()">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/profile4.png">
+                </ion-avatar>
+                <h2><span class="text-ellipsis">Beena Smith</span><span class="text-light-grey small">&nbsp; | Plumber</span> <span class="ml-auto small">In process</span></h2>
+                <p class="text-grey"><span class="text-ellipsis"><img src="assets/imgs/ruppes-icon.png"> 200 / per hover</span> <span class="ml-auto text-ellipsis">21<sup>st</sup> jan, 09:00 - 11:00</span></p>
+            </ion-item>
+        </ion-list>
+    </div>
+    <!--    <img src="../../assets/imgs/14.png" (click)="booking()">-->
+</ion-content>

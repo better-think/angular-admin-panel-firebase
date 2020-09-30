@@ -1,0 +1,107 @@
+<ion-header class="bg-transparent ">
+    <ion-navbar>
+        <ion-title>
+            <ion-icon name="pin" class="text-white pin-icon"></ion-icon>
+            <span class="city" style="margin-left: 0 !important;">
+                <ion-label class="text-white">Location For service</ion-label>
+                <ion-icon name="ios-arrow-down-outline"></ion-icon>
+                <ion-select [(ngModel)]="city" class="text-white select-city">
+                    <ion-option value="Mumbai" class="text-ellipsis">Mumbai, Bandra </ion-option>
+                    <ion-option value="Delhi" class="text-ellipsis">Delhi</ion-option>
+                </ion-select>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div class="banner">
+        <img src="assets/imgs/banner.jpg">
+        <h1 class="text-white">How Can We Help You Today?</h1>
+    </div>
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Search for service"></ion-searchbar>
+    <ion-list>
+        <ion-item *ngFor="let item of items">
+            {{ item }}
+        </ion-item>
+    </ion-list>
+    <!--    <img src="../../assets/imgs/05.png" (click)="category()">-->
+
+
+    <div class="home-menu">
+        <ion-row>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_beauty.png">
+                    <p class="text-ellipsis">Beauty</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_homecare.png">
+                    <p class="text-ellipsis">Home Care</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_pestcontrol.png">
+                    <p class="text-ellipsis">Pest Control</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_car.png">
+                    <p class="text-ellipsis">Car & Bike</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_computer.png">
+                    <p class="text-ellipsis">Computer</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_electric.png">
+                    <p class="text-ellipsis">Electric</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_healthcare.png">
+                    <p class="text-ellipsis">Health Care</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_plumbing.png">
+                    <p class="text-ellipsis">Plumbing</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_appliances.png">
+                    <p class="text-ellipsis">Appliances</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_healthcare.png">
+                    <p class="text-ellipsis">Health Care</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_plumbing.png">
+                    <p class="text-ellipsis">Plumbing</p>
+                </div>
+            </ion-col>
+            <ion-col col-4 (click)="category()">
+                <div class="menu-item">
+                    <img src="assets/imgs/ic_appliances.png">
+                    <p class="text-ellipsis">Appliances</p>
+                </div>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

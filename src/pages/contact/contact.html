@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Contact Us</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <!--    <img src="../../assets/imgs/20.png">-->
+    <div class="call-now bg-thime">
+        <h6 text-center class=" text-white">Call to speak with us</h6>
+        <button class="btn text-thime" ion-button round full margin-top margin-bottom icon-start> <ion-icon name="md-call" padding-right></ion-icon><strong>Call Now</strong></button>
+    </div>
+    <h5 text-center margin-top margin-bottom padding-bottom class="text-thime">Or Write us your issue</h5>
+
+    <div class="form">
+        <ion-list no-lines padding-bottom>
+            <ion-item>
+                <ion-avatar item-start>
+                    <ion-icon name="md-person" class="text-thime"></ion-icon>
+                </ion-avatar>
+                <ion-label class="text-grey" floating>Your Name</ion-label>
+                <ion-input type="text" value="Alizam Smith"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-avatar item-start style="margin-bottom: 3px; margin-right: 28px;">
+                    <ion-icon name="md-phone-portrait" class="text-thime"></ion-icon>
+                </ion-avatar>
+                <ion-label class="text-grey" floating>Mobile Number</ion-label>
+                <ion-input type="text" value="+91 903 335 7608"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-avatar item-start style="margin-bottom: 3px; margin-right: 28px;">
+                    <ion-icon name="md-mail" class="text-thime"></ion-icon>
+                </ion-avatar>
+                <ion-label class="text-grey">Your message</ion-label>
+                <ion-textarea type="text" class="placeholder-color" placeholder="Type your message here"></ion-textarea>
+            </ion-item>
+        </ion-list>
+        <button class="btn" ion-button round full margin-top>Submit</button>
+    </div>
+</ion-content>

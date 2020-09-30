@@ -1,0 +1,92 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title><span> <ion-icon name="md-share"></ion-icon></span></ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="bg-light">
+    <div class="bg-light profile-box">
+        <div class="profile">
+            <div class="profile-img">
+                <img src="assets/imgs/profile2.png">
+            </div>
+            <p class="retaing text-green" text-right>3.5 <span class="text-light-grey"><ion-icon name="star" class="text-green"></ion-icon> (98)</span></p>
+            <h2 text-center><span text-ellipsis>Alex John</span> <span class="type"> | Plumber</span></h2>
+
+            <ion-row>
+                <ion-col col-6>
+                    <h3 text-center><img src="assets/imgs/ruppes-icon.png">250</h3>
+                    <p text-center>per hover</p>
+                </ion-col>
+                <ion-col col-6>
+                    <h3 text-center> 2.3 km</h3>
+                    <p text-center>away from you</p>
+                </ion-col>
+            </ion-row>
+            <ion-row class="btn-box">
+                <ion-col col-6>
+                    <button ion-button icon-start full class="btn" (click)="booknow()">
+                        <ion-icon name="md-checkmark-circle" ></ion-icon>
+                        Book now
+                    </button>
+                </ion-col>
+                <ion-col col-6>
+                    <button ion-button icon-start full class="btn message-btn text-thime" (click)="chatscreen()">
+                        <ion-icon name="md-text" ></ion-icon>
+                      Message
+                    </button>
+                </ion-col>
+            </ion-row>
+        </div>
+        <ion-segment [(ngModel)]="plumber">
+            <ion-segment-button value="about">
+                About
+            </ion-segment-button>
+            <ion-segment-button value="reviews">
+                Reviews
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+    <div class="tab">
+        <div [ngSwitch]="plumber" class="tab-container">
+            <ion-list *ngSwitchCase="'about'">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+                <div class="services">
+                    <h6 class="text-thime">
+                        Services
+                    </h6>
+                    <p>Tab, Wash Basin and Shink Problem</p>
+                    <p>Bathroom Watter Filters</p>
+                    <p>Bathroom fittings</p>
+                    <p>Bathroom tank problem</p>
+                    <p>Block & Leackages</p>
+                </div>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'reviews'" no-lines class="reviews">
+                <ion-item>
+                    <div class="reviews-details">
+                        <div class="review-img">
+                            <img src="assets/imgs/profile2.png">
+                        </div>
+                        <h2 class="text-ellipsis">Emol Williams <br><small class="text-green">4.0 <ion-icon name="star" class="text-green"></ion-icon></small></h2>
+                        <p class="text-ellipsis">21<sup>st</sup> Jan' 18 </p>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                </ion-item>
+                <ion-item>
+                    <div class="reviews-details">
+                        <div class="review-img">
+                            <img src="assets/imgs/profile3.png">
+                        </div>
+                        <h2 class="text-ellipsis">Emol Williams <br><small class="text-green">5.0 <ion-icon name="star" class="text-green"></ion-icon></small></h2>
+                        <p class="text-ellipsis">21<sup>st</sup> Jan' 18 </p>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
+
+</ion-content>

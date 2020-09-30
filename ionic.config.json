@@ -1,0 +1,7 @@
+{
+  "name": "ionic-firebase-chat",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

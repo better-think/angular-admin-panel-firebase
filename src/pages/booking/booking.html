@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Job Detail</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <!--    <img src="../../assets/imgs/15.png">-->
+
+    <ion-list class="profile">
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/profile3.png">
+            </ion-avatar>
+            <h2 class=""><strong class="text-ellipsis">Alizam Smith</strong> <span> | Plumber</span>
+                <ion-icon name="md-text" class="text-thime"></ion-icon>
+            </h2>
+            <div class="details">
+                <p class=""><small>Job Task</small><span class="text-ellipsis">Tab. Wash Basin and sink Problem</span></p>
+
+                <ion-row>
+                    <ion-col col-6>
+                        <p class=""><small>BooKing for</small><span class="text-ellipsis">20<sup>th</sup> Jan, 09:00 - 11:00 </span></p>
+                    </ion-col>
+                    <ion-col col-6>
+                        <p class="job-fess"><small>Job fess</small><span class="text-ellipsis"><img src="assets/imgs/ruppes-icon.png">
+                            200 / per hover</span>
+                        </p>
+                    </ion-col>
+                </ion-row>
+                <p class="job-fess"><small>Address</small><span class="">Home, 140 Shraddha Apatment Ashirwad Society, Ner ICICI Bank, Vadodara. Landmark: Opp. Gandhi Statue.</span></p>
+            </div>
+        </ion-item>
+    </ion-list>
+    <div class="btn-container">
+        <ion-row>
+            <ion-col col-4>
+                <button ion-button icon-start full class="disable"><ion-icon name="md-close"></ion-icon>Cancel</button>
+            </ion-col>
+            <ion-col col-4>
+                <button ion-button icon-start full><ion-icon name="md-refresh"></ion-icon>Reschedule</button>
+            </ion-col>
+            <ion-col col-4>
+                <button ion-button icon-start full><ion-icon name="md-person"></ion-icon>View Profile</button>
+            </ion-col>
+        </ion-row>
+    </div>
+    <div class="job-status">
+        <h2>Job Status</h2>
+        <ion-list no-lines>
+            <ion-item class="active">
+                <span item-start class="circle"></span>
+                <div class="text">
+                    <h4 class="text-ellipsis">Booking Accepted
+                        <small>Job Accepted on 19<sup>th</sup> Jan, 08:32</small>
+                    </h4>
+                </div>
+            </ion-item>
+            <ion-item class="disable">
+                <span item-start class="circle"></span>
+                <div class="text">
+                    <h4 class="text-ellipsis">Job In process
+                        <small>Job Started on 20<sup>th</sup> Jan, 09:00 - 11:00</small>
+                    </h4>
+                </div>
+            </ion-item>
+            <ion-item class="disable">
+                <span item-start class="circle"></span>
+                <div class="text">
+                    <h4 class="text-ellipsis">Job Finished
+                        <small>Job Completed on 12:30 | <span>Client Reviewed <span class="text-green"> 4 <ion-icon name="md-star"></ion-icon></span></span></small>
+                    </h4>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

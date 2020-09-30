@@ -1,0 +1,72 @@
+page-contact {
+    .call-now {
+        margin-top: -1px;
+        padding: 30px;
+        h6 {
+            margin: 0;
+            font-weight: 400;
+            padding-top: 27px;
+            padding-bottom: 10px;
+        }
+        .button {
+            &.btn {
+                height: 5rem;
+            }
+            background: white !important;
+            &:hover,
+            &:focus,
+            &:active {
+                background: white !important;
+            }
+            ion-icon {
+                font-size: 1.9rem;
+            }
+        }
+    }
+    h5 {
+        padding-top: 10px;
+        font-size: 1.7rem;
+    }
+    .form {
+        .list {
+            padding: 0;
+            margin-bottom: 37px;
+            .item {
+                margin-bottom: 25px;
+                &.item-textarea {
+                    .label {
+                        font-size: 1.3rem !important;
+                        font-weight: 400 !important;
+                    }
+                    .input-wrapper {
+                        display: block;
+                        ion-textarea {
+                            line-height: 14px;
+                            margin-top: 6px;
+                            font-size: 1.4rem;
+                            .text-input {
+                                width: 100%;
+                                margin: 0;
+                                min-height: unset;
+                                max-height: 20px;
+                                &::-moz-placeholder {
+                                    color: #ebebeb;
+                                    font-weight: 300;
+                                }
+                                &:-ms-input-placeholder {
+                                    color: #ebebeb;
+                                    font-weight: 300;
+                                }
+                                &::-webkit-input-placeholder {
+                                    text-indent: 0;
+                                    color: #ebebeb;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
